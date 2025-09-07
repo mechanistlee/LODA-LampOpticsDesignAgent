@@ -1,0 +1,4 @@
+numpy
+scipy
+trimesh
+# Optional for training if you want GPU/ML: torch torchvision

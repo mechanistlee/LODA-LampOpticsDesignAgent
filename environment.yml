@@ -1,0 +1,13 @@
+name: loda-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - trimesh
+  - pip
+  - pip:
+    - -r requirements.txt
+  # Optional: add pytorch/cuda packages manually if needed
