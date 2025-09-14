@@ -1,0 +1,25 @@
+sources:
+  AXIS_SOURCE_1:
+    power: 1.0
+    distribution: gaussian
+    fwhm_deg: 30
+    wavelength_nm: 555   # (선택) photometric 변환 고려 시
+
+sensors:
+  AXIS_SENSOR_1:
+    type: planar
+    size_mm: [120, 60]
+    res: [256, 128]
+    distance_mm: 500
+  FARFIELD:
+    type: spherical
+    theta_step_deg: 1.0
+    phi_step_deg: 2.0
+    distance_mm: 10000
+
+materials:
+  LENS_INNER: { type: dielectric, ior: 1.49, roughness: 0.002, coating: none }
+  LENS_OUTER: { type: dielectric, ior: 1.49, coating: ar_550nm }
+  REFLECTOR:  { type: mirror, reflectance: 0.92 }
+  HOUSING:    { type: absorb, absorbance: 0.98 }
+
